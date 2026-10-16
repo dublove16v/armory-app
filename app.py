@@ -1,3 +1,4 @@
+# Created by Luke Purdy (GitHub: dublove16v). Copyright (c) 2026-2026 Luke Purdy. All rights reserved. See AUTHORSHIP.md.
 """Airsoft locker. Receipts load from Supabase after sign-in. Session edits stay in the browser."""
 
 from __future__ import annotations
@@ -410,3 +411,5 @@ with archive_tab:
         if part["status"] == "broken" and right.button("Restore", key=f"restore-part-{part['id']}"):
             set_part_status(part["id"], "installed" if part["replica_id"] else "stock")
             st.rerun()
+
+__author__ = "Luke Purdy"
